@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrazione</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="container py-5">
+
+  <div class="row align-items-stretch">
+
+    <!-- SINISTRA (IMMAGINE + OUTPUT)-->
+    <div class="col-md -6 order-2 order-md-1">
+
+      <div class="card side-card h-100">
+
+        <!-- IMMAGINE -->
+        <div class="img-container">
+          <img src="./vettoriale_donna_pc.avif"
+               class="img-fluid hero-img"
+               alt="immagine">
+        </div>
+
+        <!-- OUTPUT -->
+        <div id="output" class="card output-card mt-4 d-none"></div>
+
+      </div>
+
+    </div>
+
+    <!--DESTRA (FORM)-->
+    <div class="col-md-6 order-1 order-md-2">
+
+      <div class="card side-card h-100 shadow">
+
+        <div class="card-body">
+
+          <h3 class="text-center mb-4">Registrazione Utente</h3>
+
+          <form>
+
+            <!-- Nome -->
+            <div class="mb-3">
+              <label class="form-label">Nome</label>
+              <input type="text" placeholder="es: Chiara" class="form-control" id="nome">
+            </div>
+
+            <!-- Cognome -->
+            <div class="mb-3">
+              <label class="form-label">Cognome</label>
+              <input type="text" placeholder=  "es: Rossi" class="form-control" id="cognome">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" placeholder="es: chiara@rossi.it" class="form-control" id="email">
+            </div>
+
+            <!-- Password -->
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+
+            <div class="password-wrapper">
+              <input type="password" class="form-control" id="password">
+
+              <span class="toggle-password" onclick="togglePassword('password', 'eyeIcon1')">
+                <img id="eyeIcon1"
+                    src="https://cdn.jsdelivr.net/npm/lucide-static/icons/eye.svg"
+                    width="18">
+              </span>
+            </div>
+          </div>
+
+          <!-- Conferma password -->
+          <div class="mb-3">
+            <label class="form-label">Conferma Password</label>
+
+            <div class="password-wrapper">
+              <input type="password" class="form-control" id="confpassword">
+
+              <span class="toggle-password" onclick="togglePassword('confpassword', 'eyeIcon2')">
+                <img id="eyeIcon2"
+                    src="https://cdn.jsdelivr.net/npm/lucide-static/icons/eye.svg"
+                    width="18">
+              </span>
+            </div>
+          </div>
+
+            <!-- bottone-->
+            <button onclick="inviaForm()" type="button" class="btn btn-primary w-100">
+              Registrati
+            </button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="./main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

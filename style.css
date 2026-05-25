@@ -1,0 +1,100 @@
+body{
+    background: rgba(254, 185, 48, 0.35);
+}
+
+/* LAYOUT UGUALE ALTEZZA */
+.row{
+    align-items: stretch;
+}
+
+.side-card{
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(6px);
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* IMMAGINE */
+.img-container{
+    height: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TITOLI */
+h3,
+.output-card h2{
+    color: #6a2cff;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* INPUT */
+.form-control{
+    border-radius: 12px;
+    border: 1px solid #ffd2a6;
+}
+
+.form-control:focus{
+    border-color: #ff8a3d;
+    box-shadow: 0 0 0 0.2rem rgba(255, 138, 61, 0.25);
+}
+
+/* BUTTON */
+.btn-primary{
+    background: linear-gradient(90deg, #ff8a3d, #6a2cff);
+    border: none;
+}
+
+.btn-primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(255, 138, 61, 0.25);
+}
+
+/* wrapper input password */
+.password-wrapper{
+    position: relative;
+}
+
+/* input con spazio per icona */
+.password-wrapper input{
+    padding-right: 40px;
+}
+
+/* icona occhio */
+.toggle-password{
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.toggle-password:hover{
+    opacity: 1;
+}
+
+/* OUTPUT CARD */
+.output-card{
+   
+    padding: 12px;
+    font-size: 14px;
+
+    border-radius: 16px;
+    background: #ffffff;
+
+    border-left: 5px solid #ff8a3d;
+
+}
